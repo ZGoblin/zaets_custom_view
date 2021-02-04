@@ -8,8 +8,36 @@
 
     <com.example.zaetscustomview.FanControlView
         android:id="@+id/fanControl"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.3"
+        app:fontSize="@dimen/fan_font_size"
+        app:color="@color/parimatch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.example.zaetscustomview.CoolerView
+        android:id="@+id/fan"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:fontSize="40sp" />
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.3"
+        app:src="@drawable/ic_fan"
+        android:padding="@dimen/cooler_padding"
+        app:layout_constraintTop_toBottomOf="@id/fanControl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.example.zaetscustomview.MovieCardView
+        android:id="@+id/movieCard"
+        app:movieName="The Boss Baby"
+        app:type="Animation"
+        app:rating="4.5"
+        app:price="UAH 25.00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

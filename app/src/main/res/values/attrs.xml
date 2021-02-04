@@ -4,4 +4,16 @@
         <attr name="color" format="color"/>
         <attr name="fontSize" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="CoolerView">
+        <attr name="src" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MovieCardView">
+        <attr name="movieName" format="string"/>
+        <attr name="rating" format="float"/>
+        <attr name="price" format="string"/>
+        <attr name="poster" format="reference"/>
+        <attr name="type" format="string"/>
+    </declare-styleable>
 </resources>

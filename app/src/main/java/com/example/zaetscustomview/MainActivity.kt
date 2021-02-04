@@ -2,7 +2,6 @@ package com.example.zaetscustomview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import com.example.zaetscustomview.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +13,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        setupListener()
+
+        binding.movieCard.setRating(3.5f)
+        binding.movieCard.setMovieName(R.string.movie_name)
+    }
+
+    private fun setupListener() {
         binding.fanControl.setOnClickListener {
+            it as FanControlView
+            binding.fan.speed = it.currentStep * 3
         }
     }
 }

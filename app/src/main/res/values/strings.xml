@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Zaets Custom View</string>
+    <string name="movie_name">Homo Ludens</string>
+    <string name="the_boss_baby">The Boss Baby</string>
+    <string name="animation">Animation</string>
+    <string name="uah_25_00">UAH 25.00</string>
 </resources>
